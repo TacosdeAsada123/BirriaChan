@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=Sankofa+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sankofa+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@media (max-width: 480px) {
+    #home .fila .der .texto1 {
+        font-size: 10px; /* Reducir más el tamaño de fuente en móviles */
+    }
+
+    #home .fila .der .opciones{
+        font-size: 1rem; /* Ajuste de los encabezados en móviles */
+    }
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -91,7 +103,7 @@ section{
     color: #ff7f4d;
 }
 #home .fila .der .opciones{
-    font-size: 30px;
+    
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -144,7 +156,7 @@ section{
     width: 30%;
     height: auto;
 }
-
+tec
   /* Estilos básicos del navbar */
   body {
     font-family: Arial, sans-serif;
@@ -226,4 +238,133 @@ nav a:hover {
 .ramen{
     width: 50px;
     height: 40px;
+}
+
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h2, h3 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Estilo para la sección de productos */
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.product-item img.product-image {
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 7%;
+}
+
+.product-details {
+    padding: 20px;
+    width: 100%;
+}
+
+.product-details h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.product-details ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.product-details h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+    .product-info {
+        padding: 20px;
+    }
+
+    .product-item {
+        flex-direction: column;
+    }
+
+    .product-details h2 {
+        font-size: 1.6rem;
+    }
+
+    .product-details h3 {
+        font-size: 1.4rem;
+    }
+
+    .product-details ul li {
+        font-size: 0.9rem;
+    }
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.5);  /* Fondo oscuro para el footer */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Espaciado interno del footer */
+    font-family: 'Arial', sans-serif; /* Fuente del footer */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hashtags {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los hashtags se ajusten */
+    justify-content: center;
+    gap: 10px; /* Espacio entre los hashtags */
+}
+
+.hashtags span {
+    background-color: #30021d; /* Color de fondo para los hashtags */
+    color: white; /* Color de texto blanco */
+    padding: 5px 15px; /* Espaciado alrededor del texto */
+    border-radius: 20px; /* Bordes redondeados */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover para los hashtags */
+.hashtags span:hover {
+    background-color: #35032a; /* Cambia el color de fondo al pasar el mouse */
 }
