@@ -6,7 +6,7 @@
     <title>BIRRUACHAN</title>
     <link rel="icon" href="/img/515ec4ad-16 6c-4cd0-b850-d8b3a7c7ed8c_1.jpg" type="image/jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js">
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -16,12 +16,17 @@
             <h1>BIRRUACHAN</h1>
             <h3>WAKU WAKU!!</h3>
         </div>
-        <nav>
+
+       <nav>
+        <button class="menu-icon" id="menu-toggle"><img src="./img/ramen.png" alt="" class="ramen"></button>
+        <div class="menu" id="menu">
             <a href="#">Home</a>
             <a href="#">Menu</a>
             <a href="#">Para llevar</a>
             <a href="#">Contactos</a>
-        </nav>
+        </div>
+       </nav>
+
     </header>
 
     <section id="home">
@@ -94,6 +99,15 @@
             </p>
         </div>
     </section>
+    <script>
+        // JavaScript para activar y desactivar el menú
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        menuToggle.addEventListener('click', function() {
+            menu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>
