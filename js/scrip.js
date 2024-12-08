@@ -23,3 +23,25 @@ window.addEventListener('load', function() {
     menuToggle.addEventListener('click', function() {
         menu.classList.toggle('active');
     });
+
+    // Obtener los elementos
+var popup = document.getElementById("popup");
+var openBtn = document.getElementById("openBtn");
+var closeBtn = document.getElementById("closeBtn");
+
+// Abrir la ventana emergente
+openBtn.onclick = function() {
+  popup.style.display = "flex"; // Muestra la ventana emergente
+}
+
+// Cerrar la ventana emergente
+closeBtn.onclick = function() {
+  popup.style.display = "none"; // Oculta la ventana emergente
+}
+
+// Cerrar la ventana si se hace clic fuera de la ventana emergente
+window.onclick = function(event) {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+}
